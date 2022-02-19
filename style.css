@@ -1,0 +1,518 @@
+body{
+	margin: 0px;
+}
+
+/* Body Header */
+
+#body-header{
+	height: 65vh;
+	opacity: 1;
+	background-image: url(image/Roadmap-to-become-a-successful-web-developer.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 8px 8px 0px;
+}
+
+.horizontal-list li a{
+	color: white;
+	text-decoration: none;
+	transition: color 0.4s;
+}
+
+.horizontal-list li a:hover{
+	color: #d685ff;
+	border-bottom: 1px solid white;
+}
+
+.text-center{
+	text-align: center;
+}
+
+/* name-div */
+#name-social-container {
+    margin-top: 10vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li {
+    border-radius: 50%;
+}
+
+/*.social-icons li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}*/
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+    border-radius: 50%;
+    width: 1rem;
+    padding: 8px;
+    margin: -8px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+}
+
+.social-icons li a img{
+	width: 14px;
+	height: 16px;
+	opacity: 0.6;
+}
+
+.social-icons li a img:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+    border-radius: 50%;
+    width: 1rem;
+    padding: 8px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    margin: -8px;
+    color: mediumpurple;
+}
+
+section{
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: sans-serif;
+}
+
+section:nth-child(2n){
+	background-color: #777777;
+}
+
+section:nth-child(2n+1){
+	background-color: white;
+}
+
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+	font-weight: 400;
+}
+
+.section-heading span{
+	font-size: 40px;
+	color: #2857a4;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+}
+
+/*Aboout Section*/
+
+#about{
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+
+#my-image{
+	height: 12rem;
+	width: 12rem;
+	margin: auto;
+	margin-top: -17vh;
+}
+
+#my-image img{
+	height: 100%;
+	widtch: 100%;
+	border-radius: 50%;
+}
+
+#intro {
+    font-size: 15px;
+    color: grey;
+    padding-left: 20%;
+    padding-right: 20%
+}
+
+.blueEmphasise {
+    font-style: normal;
+    color: #2857a4;
+    font-weight: bold;
+}
+
+/*Skills Section*/
+
+.skills-display{
+	background-color: transparent;
+	width: 70%;
+	max-width: 500px;
+	/*border: 2px solid black;*/
+	height: auto;
+	display:  flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.skill-progress{
+	height: 1.4rem;
+	width: 7rem;
+	background-color: lightgrey;
+	border-radius: 0.8rem;
+	border: 2px solid white;
+	margin: 10px;
+}
+
+.skill-progress>div{
+	border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name span{
+	color: white;
+	font-size: 1rem;
+	margin-bottom: 75px;
+
+}
+
+/*Common margin*/
+
+.mb75px{
+	margin-bottom: 75px;
+}
+
+/*Common color*/
+
+.text-hightlight{
+	color: #2857a4;
+	font-weight: 600;
+}
+
+.mb-blue{
+	background-color: #2857a4;
+}
+
+.mb-orange{
+	background-color: orangered;
+}
+
+.mb-purple{
+	background-color: rebeccapurple;
+}
+
+/*Percentage classes*/
+
+.eighty-percent
+{
+	width: 80%;
+	height: inherit;
+}
+
+.seventy-percent
+{
+	width: 70%;
+	height: inherit;
+}
+
+.sixty-five-percent
+{
+	width: 65%;
+	height: inherit;
+}
+
+.sixty-percent
+{
+	width: 60%;
+	height: inherit;
+}
+
+.fifty-percent
+{
+	width: 50%;
+	height: inherit;
+}
+
+.thirty-percent
+{
+	width: 30%;
+	height: inherit;
+}
+
+.thirty-five-percent
+{
+	width: 35%;
+	height: inherit;
+}
+
+/* Contact Details */
+
+#contact{
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+    background-image: linear-gradient(to top right, #0000ff 0%, #9933ff 100%);
+    opacity: 0.8;
+    align-content: flex-start;
+    display: inline-block;
+    text-align: center;
+}
+
+/*#contact-me{
+	background-color: orangered;
+}*/
+
+/*#my-details{
+	background-color: blue;
+}*/
+
+/*Contact Form*/
+
+input[type=text], input[type=email], select, textarea {
+  width: 60%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: transparent;
+  padding: 12px 20px;
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  border-color: whitesmoke;
+  border-width: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+input[type=submit]:hover
+{
+	color: #9933ff;
+	background-color: black;
+	border-color: whitesmoke;
+	transition-duration: 0.4s;
+}
+
+/*Address IDs*/
+
+#my-address{
+	color: whitesmoke;
+	text-align: center;
+}
+
+#add-list{
+	list-style: none;
+}
+
+/*Work Experience*/
+
+#experience{
+	height: fit-content;
+}
+
+.timeline{
+	position: relative;
+	width: 75%;
+	/*border: 2px solid black;*/
+	height: fit-content;
+	padding: 10px;
+}
+
+.timeline-box{
+	position: relative;
+	margin: 5px;
+	width:40%;
+	left: 5%;
+	min-height: 150px;
+	/*border: 2px solid black;*/
+}
+
+.timeline-box:nth-child(2n){
+	left: 54%;
+	text-align: left;
+}
+
+.timeline-box:nth-child(2n+1){
+	text-align: right;
+}
+
+.exp-prof{
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bolder;
+	font-size: 1.5rem;
+	color: #7428d1;
+}
+
+.exp-comp{
+	font-family: monospace;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: slategrey;
+}
+
+.exp-job{
+	font-family: serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+}
+
+.timeline-box:nth-child(2n){
+	left: 54%;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+	content: "";
+	position: absolute;
+	top: 33%;
+	right: -13.25%;
+	border-radius: 50%;
+	width: 0.70rem;
+	height: 0.70rem;
+	background-color: black;
+	z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+	content: "";
+	position: absolute;
+	top: 33%;
+	left: -12%;
+	border-radius: 50%;
+	width: 0.70rem;
+	height: 0.70rem;
+	background-color: black;
+	z-index: 1;
+}
+
+.timeline-divider{
+	position: absolute;
+	height: 66%;
+	width: 0px;
+	border: 2px dashed;
+	border-color: #5d7fe3;
+	top: 12%;
+	left: 50%;
+}
+
+@media screen and (max-width: 600px){
+	.timeline-divider{
+		left: 5%;
+	}
+	.timeline-box:nth-child(2n){
+		left: 9.6%;
+		width: 80%;
+	}
+	.timeline-box:nth-child(2n+1){
+		left: 9.6%;
+		width: 80%;
+		text-align: left;
+	}
+	.timeline-box:nth-child(2n+1)::after{
+		left: -12%;
+	}
+}
+
+.timeline-traveller{
+	position: sticky;
+	top: 33%;
+	transform: rotate(90deg);
+	color: darkslategray;
+	z-index: 2;
+}
+
+/*.parikshit-logo{
+	background-image: url(image/parikshit_logo.jpg);
+	background-size: cover;
+	position: absolute;
+}
+
+.aaina-logo{
+	background-image: url(image/aaina_logo.png);
+	background-size: inherit;
+	height: 30vh;
+	opacity: 0.3;
+}*/
+
+/*Education Section*/
+
+#education{
+	height: fit-content;
+}
+
+.standard{
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bolder;
+	font-size: 1.5rem;
+	color: orangered;
+}
+
+.institute{
+	font-family: monospace;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: whitesmoke;
+}
+
+.edu-info{
+	font-family: serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+}
+
+.edu-info-list{
+	list-style-type: none;
+	text-align: left;
+}
+
+.edu-info-list li::before{
+	content: "\f35a";
+	font-family: "Font Awesome 5 Free";
+	padding: 0 5px 0 0;
+}
+
+.timeline-traveller-again{
+	position: sticky;
+	top: 33%;
+	color: #2857a4;
+	z-index: 2;
+}
+
+/*Certifications*/
+
+#certificates{
+	display: flex;
+	flex-direction: row;
+}
+
+.div-inline{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 32%;
+    margin: 1%;
+}
