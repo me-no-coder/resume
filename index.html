@@ -297,12 +297,13 @@
 			</h1>
 			<div id="contact-me">
 				<form action="https://formsubmit.co/mrenankrastogi@gmail.com" method="POST">
-					<input type="text" name="firstname" placeholder="Your name.." required>
-					<input type="hidden" name="_next" value="https://mrenank-rastogi.com/thankyou.html">
+					<input type="hidden" name="_subject" value="New submission!">
 					<input type="email" name="email" placeholder="Your email.." required>
+					<input type="text" name="firstname" placeholder="Your name.." required>
+					<!-- <input type="hidden" name="_next" value="https://mrenank-rastogi.com/thankyou.html"> -->
 					<textarea type="text" name="message" placeholder="Any message for me?" style="height: 100px" required></textarea>
 					<br>
-					<input type="submit" name="submit" value="Send Message">
+					<input type="submit" name="submit" value="Send Message" onclick="alert ('Message sent. THANK YOU :)')">
 					<hr>
 				</form>
 			</div>
