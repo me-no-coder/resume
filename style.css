@@ -91,7 +91,7 @@ body{
 
 section{
 	width: 100%;
-	min-height: 75vh;
+	/*min-height: 75vh;*/
 	height: fit-content;
 	display: flex;
 	flex-direction: column;
@@ -101,6 +101,7 @@ section{
 
 section:nth-child(2n){
 	background-color: #8c93a3;
+	min-height: 75vh;
 }
 
 section:nth-child(2n+1){
@@ -127,6 +128,7 @@ section:nth-child(2n+1){
 	height: auto;
 	width: 100%;
 	position: relative;
+	padding-bottom: 5%;
 }
 
 #my-image{
