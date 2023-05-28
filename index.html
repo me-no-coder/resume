@@ -38,9 +38,9 @@
 			</ul>
 		</nav>
 		<div id="name-social-container">
-            <div class="text-center">
+            <div id="name-div" class="text-center">
                 <h1 id="my-name">
-                    Mrenank Rastogi
+                
                 </h1>
             </div>
             <div>
@@ -72,15 +72,38 @@
 
 	<main>
 		<section id="about">
-			<div id="my-image">
-				<img src="image/resume_photo.jpg">
+
+			<video playsinline autoplay muted loop>
+				<source src="image/Background.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+
+			<div class="video-header">
+				<div id="image-popup" class="popup">
+					<span class="close-btn" onclick="closePopup()">&times;</span>
+					<img src="image/resume_photo.jpg" alt="Pop-up Image">
+				</div>
+	
+				<div id="my-image">
+					<a href="#" onclick="openPopup()">
+						<img src="image/resume_photo.jpg" alt="Thumbnail Image">
+					</a>
+				</div>
+	
+				<p id="intro" style="text-align: center;"> 
+					Final year B.Tech student |
+					Information Technology, MIT Manipal |
+					Ex-intern @MS Future Ready Talent |
+					Salesforce Dev intern @Bajaj Finserv Health Limited |
+					Ex - Scripts Head @Aaina Dramatics
+				</p>
+				<p style="padding-left: 15%; padding-right: 15%; color: #7428d1; text-align: center; font-family: cursive;">
+					A BTech in Information Technology student with a minor in Big Data and a keen interest in exploring
+					new technologies. Having demonstrated technical skills in Salesforce development, Azure, Azure
+					DevOps, JavaScript, and Vue.js. Certification courses in Data Structures, C, C++, Front End
+					Web Development, and SQL. Earned 57 badges and 40,000+ points on Trailheads (Salesforce)
+				</p>
 			</div>
-			<p id="intro" style="text-align: center;"> 
-				3rd year student pursuing B.Tech in Information Technology, MIT Manipal | Script writing head @aainadramatics
-			</p>
-			<p style="padding-left: 15%; padding-right: 15%; color: #7428d1; text-align: center; font-family: cursive;">
-				To work in a challenging environment, to prove myself as a quick learner and highly energetic person to face any challenges through hard work & where I can show my talent. To be a part of a progressive organization that gives scope to enhance my knowledge, skills and reach pinnacle in the computing field with sheer determination, dedication and hard work.An individual having good communication skills; ready to learn new ideas. Always interested in learning new things which would give me opportunity to add value to the organization by utilizing the organizational efficiency while being resourceful. Some of my hobbies include playing cricket, table tennis, playing the keyboard and coding in C++.
-			</p>
 		</section>
 
 		<section id="skills">
@@ -165,58 +188,75 @@
 		</section>
 
 		<section id="experience">
-			<h1 class="section-heading mb75px ">
-				<span>
-					<i class="fa-solid fa-briefcase"></i>
-				</span>
-				<span> WORK EXPERIENCE</span>
-			</h1>
-			<div class="timeline">
-				<div class="timeline-box">
-					<span class="exp-prof">
-						Payload Member<br>
+
+			<video autoplay muted loop>
+				<source src="image/Background.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+
+			<div class="video-header">
+				<h1 class="section-heading mb75px">
+					<span>
+						<i class="fa-solid fa-briefcase"></i>
 					</span>
-					<span class="exp-comp">
-						Parikshit Satellite<br>
-						Aug 2019-Nov 2019<br>
-					</span>
-					<span class="exp-job">
-						Worked in the student project as a Payload team member. Worked on Image processing and satellite tethering.
-					</span>
-				</div>
-				<div class="timeline-box">
-					<span class="exp-prof">
-						Mancom Member<br>
-					</span>
-					<span class="exp-comp">
-						Aaina Dramatics<br>
-						Sep 2020-Dec 2021<br>
-					</span>
-					<span class="exp-job">
-						Worked as director/assistant director in various events and managed the working committee.
-					</span>
-				</div>
-				<div class="timeline-box">
-					<span class="exp-prof">
-						Scripts Head<br>
-					</span>
-					<span class="exp-comp">
-						Aaina Dramatics<br>
-						Dec 2021-present<br>
-					</span>
-					<span class="exp-job">
-						Finalizing good scripts for events like centerstage plays, street plays and shortfilms. Heading the script department.
-					</span>
-				</div>
-				<div class="timeline-divider">
-					<div class="timeline-traveller">
-						<i class="fa-solid fa-plane fa-lg"></i>
+					<span> WORK EXPERIENCE</span>
+				</h1>
+				<div class="timeline">
+					<div class="timeline-box">
+						<span class="exp-prof">
+							Payload Member<br>
+						</span>
+						<span class="exp-comp">
+							Parikshit Satellite<br>
+							Aug 2019-Nov 2019<br><br>
+						</span>
+						<span class="exp-job">
+							Worked in the student project as a Payload team member. Worked on Image processing and satellite tethering.
+						</span>
+					</div>
+					<div class="timeline-box">
+						<span class="exp-prof">
+							Internship<br>
+						</span>
+						<span class="exp-comp">
+							Microsoft Future Ready Talent<br>
+							May 2022 - July 2022<br><br>
+						</span>
+						<span class="exp-job">
+							Built a web application that provides a platform for students to find the most suitable teachers for
+							elementary-level subjects like Physics, Chemistry and Mathematics. The students can use the inbuilt
+							message facility to directly contact the respective teachers regarding any query that they may have.
+							Used Firebase for maintaining the teacher details database, Azure Blob storage and hosting for
+							the website, with the app being built on Vue.js for front end.
+						</span>
+					</div>
+					<div class="timeline-box">
+						<span class="exp-prof">
+							Salesforce Dev Intern<br>
+						</span>
+						<span class="exp-comp">
+							Bajaj Finserv Health<br>
+							May 2022 - July 2022<br><br>
+						</span>
+						<span class="exp-job">
+							Built a Website Page from scratch using Visualforce Pages, Lightning Web Components,
+							SLDS, Apex programming language and SOQL.
+							Worked on Salesforce Flows and the Communication Module to automate the process of sending
+							emails to customers and providers.
+							Developed a RESTful API using Apex REST and integrated it with Salesforce to allow seamless
+							data sharing between the Salesforce application and the mobile app data team.
+						</span>
+					</div>
+					<div class="timeline-divider">
+						<div class="timeline-traveller">
+							<i class="fa-solid fa-plane fa-lg" style="color:#7428d1"></i>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="education">
-			<h1 class="section-heading mb75px ">
+			<h1 class="section-heading mb75px">
 				<span>
 					<i class="fa-solid fa-user-graduate"></i>
 				</span>
@@ -281,14 +321,21 @@
 				</div>
 			</div>
 		</section>
-		<!-- <section id="certificates">
+		<section id="certificates">
+			<video autoplay muted loop>
+				<source src="image/Background.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+
+			<div class="video-header">
 			<h1 class="section-heading mb75px ">
 				<span>
 					<i class="fas fa-money-check"></i>
 				</span>
 				<span> CERTIFICATES </span>
 			</h1>
-		</section> -->
+			</div>
+		</section>
 		<section id="contact">
 			<h1 class="section-heading mb75px">
 					<span style="color: whitesmoke;">
@@ -297,14 +344,13 @@
 				<span style="color: whitesmoke;">CONTACT</span>
 			</h1>
 			<div id="contact-me">
-				<form action="https://formsubmit.co/mrenankrastogi@gmail.com" method="POST">
+				<form name="form" action="https://formsubmit.co/mrenankrastogi@gmail.com" method="POST">
 					<input type="hidden" name="_subject" value="New submission!">
 					<input type="email" name="email" placeholder="Your email.." required>
 					<input type="text" name="firstname" placeholder="Your name.." required>
-					<!-- <input type="hidden" name="_next" value="https://mrenank-rastogi.com/thankyou.html"> -->
 					<textarea type="text" name="message" placeholder="Any message for me?" style="height: 100px" required></textarea>
 					<br>
-					<input type="submit" name="submit" value="Send Message" onclick="alert ('Message sent. THANK YOU :)')">
+					<input type="submit" name="submit" value="Send Message" onclick="customToastMessage(event)">
 					<hr>
 				</form>
 			</div>
@@ -320,8 +366,10 @@
 					</h2>
 					<div>
 						<h4 style="color: black;">
-							<i class="fa-solid fa-house-chimney"></i>
-							Home:
+							<a class="remove-link-decor" href="https://goo.gl/maps/K2i8HrQyc5Ee32736">
+								<i class="fa-solid fa-house-chimney"></i>
+								Home:
+							</a>
 						</h4>
 						<p>
 							F-2, Sector-50, Noida, 201307
@@ -329,22 +377,29 @@
 					</div>
 					<div>
 						<h4 style="color: black;">
-							<i class="fa-solid fa-briefcase"></i>
-							Work:
+							<a class="remove-link-decor" href="https://goo.gl/maps/WMywZuYAecdrmGdr7">
+								<i class="fa-solid fa-briefcase"></i>
+								Work:
+							</a>
 						</h4>
 						<p>
-							Block-15, MIT Hostels, Manipal
+							Bajaj Finserv Health Limited, <br>
+							Viman Nagar, Pune, India
 						</p>
 					</div>
 				</div>
 				<div id="phone-email">
 					<h2>
-						<i class="fa-solid fa-phone"></i>
-						Phone: 9140692361
+						<a href="tel:9140692361" class="remove-link-decor">
+							<i class="fa-solid fa-phone"></i>
+							Phone: 9140692361
+						</a>
 					</h2>
 					<h2>
-						<i class="fa-solid fa-envelope"></i>
-						E-mail: mrenankrastogi@gmail.com
+						<a href="mailto:mrenankrastogi@gmail.com" class="remove-link-decor">
+							<i class="fa-solid fa-envelope"></i>
+							E-mail: mrenankrastogi@gmail.com
+						</a>
 					</h2>
 				</div>
 				&nbsp; &nbsp;
@@ -375,6 +430,14 @@
 			</div>
 		</section>
 	</main>
+
+	<div id="toast">
+		<div id="img">
+			<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+		</div>
+		<div id="desc"></div>
+	</div>
+
 	<script src="main.js"></script>
 </body>
 </html>
